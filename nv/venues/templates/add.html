@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Add venue</h1>
+        
+        <form action="addrecord/" method="post">
+            {% csrf_token %}
+            Venue name:<br>
+            <input name="venue_name">
+            <br><br>
+            Venue manager:<br>
+            <input name="venue_manager">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Update venue</h1>
+        
+        <form action="updaterecord/{{ myvenue.id }}" method="post">
+            {% csrf_token %}
+            Venue name:<br>
+            <input name="venue_name", value="{{myvenue.venue_name}}">
+            <br><br>
+            Venue manager:<br>
+            <input name="venue_manager", value="{{myvenue.venue_manager}}">
+            <br><br>
+            <input type="submit" value="Update">
+        </form>
+    </body>
+</html>
